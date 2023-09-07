@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ListingController;
-
+use App\Http\Controllers\typingTest;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +32,6 @@ Route::post('/users',[UserController::class,'store']);
 Route::post('/logout',[UserController::class,'logout'])->middleware('auth');
 Route::get('/login',[UserController::class,'login'])->name('login')->middleware('guest');
 Route::post('/users/authenticate',[UserController::class,'authenticate']);
+
+//typing test
+Route::get('/typing',[typingTest::class,'showTest']);
