@@ -51,3 +51,4 @@ return redirect('/')->with('message','User created and logged in');
 
  }
 }
+ 
