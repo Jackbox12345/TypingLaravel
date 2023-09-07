@@ -41,6 +41,12 @@
                    <span class="font-bold uppercase">Welcome {{auth()->user()->name}}</span>
                 </li>
                 <li>
+                    <a href="/typingtest" class="hover:text-laravel"
+                        ><i class="fa-solid fa-gear"></i>
+                        Typing Test</a
+                    >
+                </li>
+                <li>
                     <a href="/listings/manage" class="hover:text-laravel"
                         ><i class="fa-solid fa-gear"></i>
                         Manage</a
