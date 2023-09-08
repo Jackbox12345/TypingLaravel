@@ -54,9 +54,14 @@ function initTyping() {
         let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
         
+       
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
         cpmTag.innerText = charIndex - mistakes;
+    
+        document.getElementById("mistake1").value = mistakes;
+        document.getElementById("wpm1").value = wpm;
+        document.getElementById("cpm1").value = charIndex - mistakes;
     } else {
         clearInterval(timer);
         inpField.value = "";
@@ -99,15 +104,18 @@ function getValue() {
     var cpmValue = document.getElementById("cpmValue").textContent;
 
     // Set the values to the corresponding hidden input fields
-    document.getElementById("mistake1").value = mistakeValue;
-    document.getElementById("wpm1").value = wpmValue;
-    document.getElementById("cpm1").value = cpmValue;
+
 
     // Now you can submit the form or perform other actions as needed
+}
+function ass(){
+    document.getElementById("mistake1").value = mistakeTag;
+    document.getElementById("wpm1").value = wpmTag;
+    document.getElementById("cpm1").value = cpmTag;
 }
 
 
 loadParagraph();
 inpField.addEventListener("input", initTyping);
-tryAgainBtn.addEventListener("click", getValue);
+// tryAgainBtn.addEventListener("click", ass);
 tryAgainBtn.addEventListener("click", resetGame);

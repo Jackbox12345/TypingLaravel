@@ -9,5 +9,5 @@ class typingTest extends Model
 {
     use HasFactory;
     protected $table = 'typingTest';
-    protected $fillable =['user_id','wpm','mistake','cpm','status','accuracy'];
+    protected $fillable =['user_id','wpm','mistake','cpm','status'];
 }

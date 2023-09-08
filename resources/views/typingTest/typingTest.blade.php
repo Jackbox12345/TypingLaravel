@@ -8,7 +8,7 @@
         </header>
         <link rel="stylesheet" href="{{ asset('css/typingtest.css') }}">
             <div class="wrapper">
-                <form method= "POST" action="/typing">
+                <form method="POST" action="/typing">
                 @csrf
                 <input type="text" class="input-field">
                 <div class="content-box">
@@ -35,7 +35,7 @@
                         <span>0</span>
                     </li>
                     </ul>
-                    <input type="hidden" name="id" value = "{{auth()->user()->id}}">
+                    <input type="hidden" name="user_id" value = "{{auth()->user()->id}}">
                     <input type="hidden" name="mistake" id="mistake1">
                     <input type="hidden" name="wpm" id="wpm1">
                     <input type="hidden" name="cpm" id="cpm1">
