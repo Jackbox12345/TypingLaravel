@@ -37,9 +37,9 @@ Route::post('/logout',[UserController::class,'logout'])->middleware('auth');
 Route::get('/login',[UserController::class,'login'])->name('login')->middleware('guest');
 Route::post('/users/authenticate',[UserController::class,'authenticate']);
 
+//typing test
 Route::get('/typingtest',[typingController::class,'typingTest']);
 
 
-//typing test
-Route::get('/typing',[typingTest::class,'showTest']);
+
 
