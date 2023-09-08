@@ -12,6 +12,7 @@ class typingController extends Controller
     }
     public function typingSubmit(Request $request){
         dd($request);
-     typingTest::create($request);
+      
+     //typingTest::create($request);
     }
 }

@@ -39,7 +39,7 @@ Route::post('/users/authenticate',[UserController::class,'authenticate']);
 
 //typing test
 Route::get('/typingtest',[typingController::class,'typingTest']);
-Route::put('/typing/store',[typingController::class,'typingSubmit']);
+Route::post('/typing',[typingController::class,'typingSubmit']);
 
 
 

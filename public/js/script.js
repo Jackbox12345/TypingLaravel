@@ -77,12 +77,7 @@ function initTimer() {
 function resetGame() {
     loadParagraph();
     clearInterval(timer);
-    var mistakeval = document.getElementById('mistake1');
-    var wpmval = document.getElementById('wpm1');
-    var cpmval = document.getElementById('cpm1');
-    wpmval  = wpm; 
-    mistakeval = wpm;
-    mistakeval = mistake;
+    inputData();
     timeLeft = maxTime;
     charIndex = mistakes = isTyping = 0;
     inpField.value = "";
@@ -90,8 +85,29 @@ function resetGame() {
     wpmTag.innerText = 0;
     mistakeTag.innerText = 0;
     cpmTag.innerText = 0;
+
 }
+
+function getValue() {
+    // Get the value of the 'mistake' span element
+    var mistakeValue = document.getElementById("mistakeValue").textContent;
+
+    // Get the value of the 'wpm' span element
+    var wpmValue = document.getElementById("wpmValue").textContent;
+
+    // Get the value of the 'cpm' span element
+    var cpmValue = document.getElementById("cpmValue").textContent;
+
+    // Set the values to the corresponding hidden input fields
+    document.getElementById("mistake1").value = mistakeValue;
+    document.getElementById("wpm1").value = wpmValue;
+    document.getElementById("cpm1").value = cpmValue;
+
+    // Now you can submit the form or perform other actions as needed
+}
+
 
 loadParagraph();
 inpField.addEventListener("input", initTyping);
+tryAgainBtn.addEventListener("click", getValue);
 tryAgainBtn.addEventListener("click", resetGame);
