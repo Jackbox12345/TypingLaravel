@@ -19,7 +19,7 @@
                 <div class="content">
                     <ul class="result-details">
                     <li class="time">
-                        <p>Time Left:</p>
+                        <p>Time Lefasdast:</p>
                         <span><b>60</b>s</span>
                     </li>
                     <li class="mistake">
