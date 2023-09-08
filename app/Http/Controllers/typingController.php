@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\typingTest;
 use Illuminate\Http\Request;
 
 class typingController extends Controller
@@ -11,6 +12,6 @@ class typingController extends Controller
     }
     public function typingSubmit(Request $request){
         
-
+     typingTest::create($request);
     }
 }
