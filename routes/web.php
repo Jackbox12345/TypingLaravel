@@ -38,7 +38,7 @@ Route::get('/login',[UserController::class,'login'])->name('login')->middleware(
 Route::post('/users/authenticate',[UserController::class,'authenticate']);
 
 //typing test
-Route::get('/typingtest',[typingController::class,'typingTest']);
+Route::get('/typingtest/{typingStatus}',[typingController::class,'typingTest']);
 Route::post('/typing',[typingController::class,'typingSubmit']);
 
 

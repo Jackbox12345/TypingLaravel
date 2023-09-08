@@ -5,7 +5,7 @@ timeTag = document.querySelector(".time span b"),
 mistakeTag = document.querySelector(".mistake span"),
 wpmTag = document.querySelector(".wpm span"),
 cpmTag = document.querySelector(".cpm span");
-
+var acc = 0;
 let timer,
 maxTime = 60,
 timeLeft = maxTime,
@@ -58,10 +58,12 @@ function initTyping() {
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
         cpmTag.innerText = charIndex - mistakes;
-    
+      
         document.getElementById("mistake1").value = mistakes;
         document.getElementById("wpm1").value = wpm;
+        document.getElementById("chpm").value = wpm;
         document.getElementById("cpm1").value = charIndex - mistakes;
+
     } else {
         clearInterval(timer);
         inpField.value = "";
@@ -84,6 +86,7 @@ function resetGame() {
     clearInterval(timer);
     inputData();
     timeLeft = maxTime;
+
     charIndex = mistakes = isTyping = 0;
     inpField.value = "";
     timeTag.innerText = timeLeft;
