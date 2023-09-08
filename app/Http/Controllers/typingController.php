@@ -9,4 +9,8 @@ class typingController extends Controller
     public function typingTest(){
         return view('typingTest.typingTest');
     }
+    public function typingSubmit(Request $request){
+        
+
+    }
 }
