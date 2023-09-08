@@ -32,6 +32,9 @@
                         <span>0</span>
                     </li>
                     </ul>
+                    <input type="hidden" name="mistake" id="mistake">
+                    <input type="hidden" name="wpm" id="wpm">
+                    <input type="hidden" name="cpm" id="cpm">
                     <button>Submit</button>
                 </div>
                 </div>
