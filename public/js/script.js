@@ -77,6 +77,12 @@ function initTimer() {
 function resetGame() {
     loadParagraph();
     clearInterval(timer);
+    var mistakeval = document.getElementById('mistake1');
+    var wpmval = document.getElementById('wpm1');
+    var cpmval = document.getElementById('cpm1');
+    wpmval  = wpm; 
+    mistakeval = wpm;
+    mistakeval = mistake;
     timeLeft = maxTime;
     charIndex = mistakes = isTyping = 0;
     inpField.value = "";

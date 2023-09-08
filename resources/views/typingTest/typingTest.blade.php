@@ -35,9 +35,9 @@
                         <span>0</span>
                     </li>
                     </ul>
-                    <input type="hidden" name="mistake" id="mistake">
-                    <input type="hidden" name="wpm" id="wpm">
-                    <input type="hidden" name="cpm" id="cpm">
+                    <input type="hidden" name="mistake" id="mistake1">
+                    <input type="hidden" name="wpm" id="wpm1">
+                    <input type="hidden" name="cpm" id="cpm1">
                     <button>Submit</button>
                 </div>
                 </div>

@@ -11,7 +11,7 @@ class typingController extends Controller
         return view('typingTest.typingTest');
     }
     public function typingSubmit(Request $request){
-        
+        dd($request);
      typingTest::create($request);
     }
 }
