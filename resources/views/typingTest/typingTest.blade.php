@@ -8,11 +8,14 @@
         </header>
         <link rel="stylesheet" href="{{ asset('css/typingtest.css') }}">
             <div class="wrapper">
+                <form method= "PUT" action="/typing/store">
+                @csrf
                 <input type="text" class="input-field">
                 <div class="content-box">
                 <div class="typing-text">
                     <p></p>
                 </div>
+              
                 <div class="content">
                     <ul class="result-details">
                     <li class="time">
@@ -38,6 +41,7 @@
                     <button>Submit</button>
                 </div>
                 </div>
+            </form>
             </div>  
     <script src="js/paragraphs.js"></script>
     <script src="js/script.js"></script>
