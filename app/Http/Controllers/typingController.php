@@ -11,7 +11,11 @@ class typingController extends Controller
 {
     public function typingTest(){
         $status = typingTest::where('user_id',auth()->id())->get();
-        $status2 = $status->first()->status;
+       if($status){
+        $status2 = $status->latest()->status;
+       }else{
+        $status2 = "sad";
+       }
         return view('typingTest.typingTest',['typingStatus'=>$status2]);
     }
     public function typingSubmit(Request $request){
@@ -34,7 +38,7 @@ class typingController extends Controller
             $fields['status'] = "Failed";
         }
 
-          
+        //   return request('wpm');
      typingTest::create($fields);
      return redirect('/')->with('message','Test Recorded');
 

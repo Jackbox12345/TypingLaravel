@@ -5,6 +5,7 @@ timeTag = document.querySelector(".time span b"),
 mistakeTag = document.querySelector(".mistake span"),
 wpmTag = document.querySelector(".wpm span"),
 cpmTag = document.querySelector(".cpm span");
+var button = document.getElementById('myButton')
 var acc = 0;
 let timer,
 maxTime = 60,
@@ -27,6 +28,7 @@ function initTyping() {
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
     if(charIndex < characters.length - 1 && timeLeft > 0) {
+        
         if(!isTyping) {
             timer = setInterval(initTimer, 1000);
             isTyping = true;
@@ -61,8 +63,9 @@ function initTyping() {
       
         document.getElementById("mistake1").value = mistakes;
         document.getElementById("wpm1").value = wpm;
-        document.getElementById("chpm").value = wpm;
+        document.getElementById("chpm").value = charIndex;
         document.getElementById("cpm1").value = charIndex - mistakes;
+
 
     } else {
         clearInterval(timer);
