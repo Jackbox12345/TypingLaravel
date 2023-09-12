@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class typingTest extends Model
 {
     use HasFactory;
-    protected $table = 'typingTest';
+    protected $table = 'typingtest';
     protected $fillable =['user_id','wpm','mistake','cpm','status','accuracy'];
 }

@@ -10,14 +10,11 @@ use Illuminate\Http\Request;
 class typingController extends Controller
 {
     public function typingTest(){
-        $status = typingTest::where('user_id',auth()->id())->get();
-       if($status){
-        $status2 = $status->latest()->status;
-       }else{
-        $status2 = "sad";
-       }
-        return view('typingTest.typingTest',['typingStatus'=>$status2]);
+
+
+        return view('typingTest.typingTest');
     }
+
     public function typingSubmit(Request $request){
         $charindex = request('inpm');
         $correct = request('cpm');
