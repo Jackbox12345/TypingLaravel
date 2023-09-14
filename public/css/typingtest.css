@@ -109,7 +109,11 @@ body{
   transform: scale(0.97);
 }
 
+<<<<<<< HEAD
 #_retake{
+=======
+._refresh{
+>>>>>>> 0b6270d4380bcb03107c3d0819edcb005f4ea69d
   outline: none;
   border: none;
   width: 105px;
@@ -122,7 +126,11 @@ body{
   background: #17A2B8;
   transition: transform 0.3s ease;
 }
+<<<<<<< HEAD
 #_retake:active{
+=======
+._refresh:active{
+>>>>>>> 0b6270d4380bcb03107c3d0819edcb005f4ea69d
   transform: scale(0.97);
 }
 
