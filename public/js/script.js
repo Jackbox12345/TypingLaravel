@@ -5,7 +5,7 @@ timeTag = document.querySelector(".time span b"),
 mistakeTag = document.querySelector(".mistake span"),
 wpmTag = document.querySelector(".wpm span"),
 cpmTag = document.querySelector(".cpm span");
-var button = document.getElementById('myButton')
+const _retake = document.getElementById("_retake");
 var acc = 0;
 let timer,
 maxTime = 60,
@@ -30,6 +30,7 @@ function initTyping() {
     if(charIndex < characters.length - 1 && timeLeft > 0) {
         
         if(!isTyping) {
+            _retake.style.display = "block";
             timer = setInterval(initTimer, 1000);
             isTyping = true;
         }
@@ -119,6 +120,7 @@ function ass(){
     document.getElementById("wpm1").value = wpmTag;
     document.getElementById("cpm1").value = cpmTag;
 }
+
 
 
 loadParagraph();
