@@ -33,6 +33,11 @@ function initTyping() {
             _retake.style.display = "block";
             timer = setInterval(initTimer, 1000);
             isTyping = true;
+            var element = document.getElementById("_refresh");
+            element.style.display = "block";
+            var test = document.getElementById("test");
+            test.style.display = "none";
+            
         }
         if(typedChar == null) {
             if(charIndex > 0) {
@@ -53,6 +58,7 @@ function initTyping() {
         }
         characters.forEach(span => span.classList.remove("active"));
         characters[charIndex].classList.add("active");
+        
 
         let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
@@ -66,11 +72,13 @@ function initTyping() {
         document.getElementById("wpm1").value = wpm;
         document.getElementById("chpm").value = charIndex;
         document.getElementById("cpm1").value = charIndex - mistakes;
+       
 
 
     } else {
         clearInterval(timer);
         inpField.value = "";
+     
     }   
 }
 

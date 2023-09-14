@@ -109,7 +109,7 @@ body{
   transform: scale(0.97);
 }
 
-#_retake{
+._refresh{
   outline: none;
   border: none;
   width: 105px;
@@ -122,7 +122,7 @@ body{
   background: #17A2B8;
   transition: transform 0.3s ease;
 }
-#_retake:active{
+#_refresh:active{
   transform: scale(0.97);
 }
 

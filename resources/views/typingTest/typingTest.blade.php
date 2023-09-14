@@ -45,11 +45,17 @@
                         <input type="hidden" name="wpm" id="wpm1" >
                         <input type="hidden" name="cpm" id="cpm1" >
                         <input type="hidden" name="inpm" id="chpm">
-                        <button id="_retake" onclick="retake()" style="display: none;">Retake</button>
+                        <button id="_refresh" class="_refresh" style="display: none;">
+                            Submit
+                        </button>
+                        <a class="_refresh" id="test" onclick="refresh()" style="display: block">Refresh</a>
                     </div>
                 </div>
             </div>  
-            {{-- <div id="submitContainer" style="display: none;">
+            <div id="submitContainer" style="display: block;">
+                <p class="mb-4">
+                    Click here to submit
+                </p>
                 <button id="myButton" >Done</button>
             </div> --}}
         </form>
