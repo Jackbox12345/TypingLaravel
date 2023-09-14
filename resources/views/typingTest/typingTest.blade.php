@@ -43,16 +43,19 @@
                         <input type="hidden" name="wpm" id="wpm1" >
                         <input type="hidden" name="cpm" id="cpm1" >
                         <input type="hidden" name="inpm" id="chpm">
-                        <a id="_refresh" onclick="refresh()">Refresh</a>
+                        <button id="_refresh" class="_refresh" style="display: none;">
+                            Submit
+                        </button>
+                        <a class="_refresh" id="test" onclick="refresh()" style="display: block">Refresh</a>
                     </div>
                 </div>
             </div>  
-            <div id="submitContainer" style="display: block;">
+            {{-- <div id="submitContainer" style="display: block;">
                 <p class="mb-4">
                     Click here to submit
                 </p>
                 <button id="myButton" >Done</button>
-            </div>
+            </div> --}}
         </form>
 
     <script src="{{asset('js/paragraphs.js')}}"></script>
