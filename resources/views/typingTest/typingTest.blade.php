@@ -48,16 +48,16 @@
                         <button id="_refresh" class="_refresh" style="display: none;">
                             Submit
                         </button>
-                        <a class="_refresh" id="test" onclick="refresh()" style="display: block">Refresh</a>
+                        <a class="_refresh" id="test" onclick="refresh()"ommit style="display: block">Refresh</a>
                     </div>
                 </div>
             </div>  
-            <div id="submitContainer" style="display: block;">
+            {{-- <div id="submitContainer" style="display: block;">
                 <p class="mb-4">
                     Click here to submit
                 </p>
                 <button id="myButton" >Done</button>
-            </div> 
+            </div>  --}}
         </form>
 
     <script src="{{asset('js/paragraphs.js')}}"></script>
