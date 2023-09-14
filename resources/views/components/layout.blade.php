@@ -28,6 +28,7 @@
         </script>
         <title>LaraGigs | Find Laravel Jobs & Projects</title>
     </head>
+    $data
     <body class="mb-48">
         <nav class="flex justify-between items-center mb-4">
             <a href="/"
@@ -41,7 +42,7 @@
                    <span class="font-bold uppercase">Welcome {{auth()->user()->name}}</span>
                 </li>
                 <li>
-                    <a href="/typingtest/{status}" class="hover:text-laravel"
+                    <a href="/typingtest" class="hover:text-laravel"
                         ><i class="fa-solid fa-gear"></i>
                         Typing Test</a
                     >

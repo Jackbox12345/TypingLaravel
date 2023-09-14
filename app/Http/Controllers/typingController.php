@@ -48,7 +48,7 @@ class typingController extends Controller
          typingTest::create($fields);
 
          $data = [
-            'status' => $fields,
+            'status2' => $fields,
             'message' => 'Test Recorded'
         ];
      return view('typingTest.typingTest',$data);
