@@ -12,12 +12,15 @@ class typingController extends Controller
     public function typingTest(){
         
    
-      $status = typingTest::where('user_id',auth()->id())->first();
-     if($status){
-       $status2 = $status->status;
-     }else{
-        $status2 = "none";
-     }
+      $status = typingTest::where('user_id',auth()->id())->latest('id')->first();
+
+      if (!$status) {
+          $status2 = "none";
+      } else {
+ 
+          $status2 = $status->status;
+      }
+    
         return view('typingTest.typingTest',['status'=>$status2]);
     }
 
@@ -42,8 +45,13 @@ class typingController extends Controller
         }
 
         //   return request('wpm');
-     typingTest::create($fields);
-     return redirect('/')->with('message','Test Recorded');
+         typingTest::create($fields);
+
+         $data = [
+            'status' => $fields,
+            'message' => 'Test Recorded'
+        ];
+     return view('typingTest.typingTest',$data);
 
     }
 }
