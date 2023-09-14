@@ -2,9 +2,11 @@
     
         <header class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">
-                    Typing Test {{$status}}
+                    Typing Test
             </h2>
-        
+        <h2>
+           Status: {{$status}}
+        </h2>
             <p class="mb-4">Type the first letter to start the game</p>
             
         </header>
