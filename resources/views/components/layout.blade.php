@@ -28,7 +28,6 @@
         </script>
         <title>LaraGigs | Find Laravel Jobs & Projects</title>
     </head>
-
     <body class="mb-48">
         <nav class="flex justify-between items-center mb-4">
             <a href="/"

@@ -45,6 +45,13 @@
                         <input type="hidden" name="wpm" id="wpm1" >
                         <input type="hidden" name="cpm" id="cpm1" >
                         <input type="hidden" name="inpm" id="chpm">
+<<<<<<< HEAD
+                        <button id="_retake" onclick="retake()" style="display: none;">Retake</button>
+                    </div>
+                </div>
+            </div>  
+            {{-- <div id="submitContainer" style="display: none;">
+=======
                         <button id="_refresh" class="_refresh" style="display: none;">
                             Submit
                         </button>
@@ -56,6 +63,7 @@
                 <p class="mb-4">
                     Click here to submit
                 </p>
+>>>>>>>>> Temporary merge branch 2
                 <button id="myButton" >Done</button>
             </div> 
         </form>
