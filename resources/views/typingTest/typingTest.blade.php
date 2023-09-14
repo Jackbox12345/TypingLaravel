@@ -57,7 +57,7 @@
                     Click here to submit
                 </p>
                 <button id="myButton" >Done</button>
-            </div> --}}
+            </div> 
         </form>
 
     <script src="{{asset('js/paragraphs.js')}}"></script>
