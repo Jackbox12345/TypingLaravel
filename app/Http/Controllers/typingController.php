@@ -18,7 +18,7 @@ class typingController extends Controller
           $status2 = "none";
       } else {
  
-          $status2 = $status->status;
+          $status2 = (string)$status->status;
       }
     
         return view('typingTest.typingTest',['status'=>$status2]);
@@ -46,12 +46,9 @@ class typingController extends Controller
 
         //   return request('wpm');
          typingTest::create($fields);
-
-         $data = [
-            'status2' => $fields,
-            'message' => 'Test Recorded'
-        ];
-     return view('typingTest.typingTest',$data);
+    
+       
+     return view('typingTest.typingTest',['status'=>$fields['status']]);
 
     }
 }

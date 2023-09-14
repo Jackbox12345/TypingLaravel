@@ -5,7 +5,7 @@ timeTag = document.querySelector(".time span b"),
 mistakeTag = document.querySelector(".mistake span"),
 wpmTag = document.querySelector(".wpm span"),
 cpmTag = document.querySelector(".cpm span");
-const _retake = document.getElementById("_retake");
+var _retake = document.getElementById("_retake");
 var acc = 0;
 let timer,
 maxTime = 60,
