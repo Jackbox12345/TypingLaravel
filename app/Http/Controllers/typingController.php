@@ -10,9 +10,15 @@ use Illuminate\Http\Request;
 class typingController extends Controller
 {
     public function typingTest(){
-
-
-        return view('typingTest.typingTest');
+        
+   
+      $status = typingTest::where('user_id',auth()->id())->first();
+     if($status){
+       $status2 = $status->status;
+     }else{
+        $status2 = "none";
+     }
+        return view('typingTest.typingTest',['status'=>$status2]);
     }
 
     public function typingSubmit(Request $request){
