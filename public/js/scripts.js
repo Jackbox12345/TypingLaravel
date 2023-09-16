@@ -133,5 +133,4 @@ function ass(){
 
 loadParagraph();
 inpField.addEventListener("input", initTyping);
-// tryAgainBtn.addEventListener("click", ass);
 tryAgainBtn.addEventListener("click", resetGame);

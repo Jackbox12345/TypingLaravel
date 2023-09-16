@@ -10,7 +10,7 @@
             <p class="mb-4">Type the first letter to start the game</p>
             
         </header>
-        <link rel="stylesheet" href="{{ asset('css/typngtest.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/typingtest.css') }}">
         <form method="POST" action="/typing">
 
             <div class="wrapper">
@@ -52,17 +52,12 @@
                     </div>
                 </div>
             </div>  
-            {{-- <div id="submitContainer" style="display: block;">
-                <p class="mb-4">
-                    Click here to submit
-                </p>
-                <button id="myButton" >Done</button>
-            </div>  --}}
+  
         </form>
 
     <script src="{{asset('js/paragraphs.js')}}"></script>
-    <script src="{{asset('js/script.js')}}"></script>
-    {{-- <script src="{{asset('js/submit.js')}}"></script> --}}
+    <script src="{{asset('js/scripts.js')}}"></script>
+
     <script>
         function retake(){
             location.reload();
