@@ -109,11 +109,10 @@ body{
   transform: scale(0.97);
 }
 
-<<<<<<< HEAD
-#_retake{
-=======
+
+
 ._refresh{
->>>>>>>>> Temporary merge branch 2
+
   outline: none;
   border: none;
   width: 105px;
@@ -126,11 +125,11 @@ body{
   background: #17A2B8;
   transition: transform 0.3s ease;
 }
-<<<<<<<<< Temporary merge branch 1
-#_retake:active{
-=========
+
+
+
 ._refresh:active{
->>>>>>>>> Temporary merge branch 2
+
   transform: scale(0.97);
 }
 

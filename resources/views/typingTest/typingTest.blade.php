@@ -10,7 +10,7 @@
             <p class="mb-4">Type the first letter to start the game</p>
             
         </header>
-        <link rel="stylesheet" href="{{ asset('css/typingtest.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/typngtest.css') }}">
         <form method="POST" action="/typing">
 
             <div class="wrapper">
@@ -48,7 +48,7 @@
                         <button id="_refresh" class="_refresh" style="display: none;">
                             Submit
                         </button>
-                        <a class="_refresh" id="test" onclick="refresh()"ommit style="display: block">Refresh</a>
+                        <a class="_refresh" id="test" onclick="refresh()" style="display: block">Refresh</a>
                     </div>
                 </div>
             </div>  
